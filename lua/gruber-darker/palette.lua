@@ -1,0 +1,31 @@
+return {
+    accents = {
+        red = "#E85A4F",
+        coral = "#FF6B6B",
+        rose = "#FF758F",
+        pink = "#E57AA4",
+        lavender = "#C9A0FF",
+        violet = "#A998F0",
+        blue = "#5B82C7",
+        cyan = "#64B8B4",
+        mint = "#7CE0C2",
+        green = "#5FB36A",
+        lime = "#9ACD5A",
+        yellow = "#F6CE4E",
+        peach = "#FFB07C",
+        orange = "#FF8E29",
+    },
+
+    colors = {
+        fg = "#e4e4ef",
+        fg_light = "#f4f4ff",
+        bg = "#101010",
+        bg_alt = "#282828",
+        white = "#ffffff",
+        gray = "#cc8c3c",
+        quartz = "#95a99f",
+        yellow = "#ffdd33",
+        green = "#73c936",
+        red = "#f43841",
+    },
+}
