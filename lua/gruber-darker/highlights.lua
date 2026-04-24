@@ -12,10 +12,13 @@ function M.apply(palette, util)
 
     hl("@keyword", opts(colors.yellow, nil, { bold = true }))
     hl({ "@keyword.import", "@keyword.directive" }, opts(colors.quartz))
+    hl("@keyword.directive.python", opts(colors.gray))
 
     hl({ "@string", "@string.escape", "@character" }, opts(colors.green))
 
     hl({ "@function", "@function.call" }, opts(colors.fg))
+    hl("@function.python", opts(colors.quartz))
+    hl("@function.builtin.python", opts(colors.quartz))
 
     hl("@type", opts(colors.fg))
     hl("@type.builtin", opts(colors.quartz))
