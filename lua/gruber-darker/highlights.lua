@@ -4,7 +4,7 @@ function M.apply(palette, util)
     local colors = palette.colors
     local accents = palette.accents
     local hl = util.hl
-    local opts = util.opts
+    local opts = util.opts ---@type fun(fg?:string, bg?:string, opts?:table):table
 
     hl("Normal", opts(colors.fg, colors.bg))
 
@@ -25,6 +25,8 @@ function M.apply(palette, util)
     hl("@lsp.type.type", opts(colors.quartz))
 
     hl({ "@variable", "@property" }, opts(colors.fg_light))
+
+    hl("CursorLineNr", opts(colors.yellow, nil, { bold = true }))
 
     hl("Pmenu", opts(colors.fg, colors.bg_alt))
     hl("PmenuSel", opts(colors.bg, accents.blue))
