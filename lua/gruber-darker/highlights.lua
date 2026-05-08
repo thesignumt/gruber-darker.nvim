@@ -6,9 +6,9 @@ function M.apply(palette, util)
     local hl = util.hl
     local opts = util.opts ---@type fun(fg?:string, bg?:string, opts?:table):table
 
-    hl("Normal", opts(colors.fg, colors.bg))
+    hl("Normal", opts(colors.fg, "#000000"))
 
-    hl("@comment", opts(colors.gray))
+    hl("@comment", opts(colors.brown))
 
     hl("@keyword", opts(colors.yellow, nil, { bold = true }))
     hl({ "@keyword.import", "@keyword.directive" }, opts(colors.quartz))
@@ -28,9 +28,9 @@ function M.apply(palette, util)
 
     hl("CursorLineNr", opts(colors.yellow, nil, { bold = true }))
 
-    hl("Pmenu", opts(colors.fg, colors.bg_alt))
+    hl("Pmenu", opts(colors.fg, colors.bg_1))
     hl("PmenuSel", opts(colors.bg, accents.blue))
-    hl("PmenuSbar", opts(nil, colors.bg_alt))
+    hl("PmenuSbar", opts(nil, colors.bg_1))
     hl("PmenuThumb", opts(nil, colors.quartz))
 
     hl("CmpItemKindFunction", { fg = "#96a6c8" })
@@ -45,11 +45,11 @@ function M.apply(palette, util)
     hl("CmpItemKindType", opts(colors.quartz))
     hl("CmpItemKindEnum", { fg = "#9e95c7" })
 
-    hl("FloatBorder", opts(colors.bg_alt))
-    hl("NormalFloat", opts(nil, colors.bg_alt))
+    hl("FloatBorder", opts(colors.bg_1))
+    hl("NormalFloat", opts(nil, colors.bg_1))
 
-    hl("StatusLine", opts(colors.white, colors.bg_alt))
-    hl("StatusLineNC", opts(colors.quartz, colors.bg_alt))
+    hl("StatusLine", opts(colors.white, colors.bg_1))
+    hl("StatusLineNC", opts(colors.quartz, colors.bg_1))
 
     hl("DiagnosticError", opts(accents.red))
     hl("DiagnosticWarn", opts(accents.yellow))
