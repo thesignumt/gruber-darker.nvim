@@ -6,7 +6,7 @@ function M.apply(palette, util)
     local hl = util.hl
     local opts = util.opts ---@type fun(fg?:string, bg?:string, opts?:table):table
 
-    hl("Normal", opts(colors.fg, "#000000"))
+    hl("Normal", opts(colors.fg, colors.black))
 
     hl("@comment", opts(colors.brown))
 

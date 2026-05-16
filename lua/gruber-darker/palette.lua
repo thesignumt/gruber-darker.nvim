@@ -20,6 +20,7 @@ return {
         fg = "#e4e4ef",
         fg_1 = "#f4f4ff",
         white = "#ffffff",
+        black = "#000000",
         bg = "#101010",
         bg_1 = "#282828",
         red = "#f43841",
