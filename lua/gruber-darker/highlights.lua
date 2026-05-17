@@ -63,6 +63,8 @@ function M.apply(palette, util)
     hl("GitSignsDelete", { fg = "#5a3f3f" })
     hl("GitSignsTopDelete", { fg = "#5a3f3f" })
     hl("GitSignsChangeDelete", { fg = "#6a4a3a" })
+    -- Oil.nvim
+    hl("OilDir", opts(colors.niagara, nil, { bold = true }))
 end
 
 return M
