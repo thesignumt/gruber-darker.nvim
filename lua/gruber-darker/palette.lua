@@ -18,15 +18,17 @@ return {
 
     colors = {
         fg = "#e4e4ef",
-        fg_1 = "#f4f4ff",
+        fg_pos1 = "#f4f4ff",
         white = "#ffffff",
         black = "#000000",
-        bg = "#101010",
+        bg_sub1 = "#101010",
+        bg = "#181818",
         bg_1 = "#282828",
         red = "#f43841",
         green = "#73c936",
         yellow = "#ffdd33",
         brown = "#cc8c3c",
         quartz = "#95a99f",
+        niagara = "#96a6c8",
     },
 }
